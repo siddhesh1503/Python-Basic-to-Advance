@@ -1,0 +1,3 @@
+# It will usefull only whenever we are creating mutable collections
+# We can't able to use while loop, elif statement block inside the comprehensions
+# we can't initialize the variable iniside the comprehension

@@ -1,0 +1,99 @@
+It is named memory block where we are going to store some set of instruction which are ment to perform some specific task
+which only run when you called It
+Uses : code reusable, smaller chunks
+Type of functions:
+1. in - built function 
+2. user defined function
+
+* In-built function :
+It is function whose task is predefined by the developer
+we can easily access it but we can't modify it
+:input(),len(),ord()..
+
+* User defined function:
+It is type of function, which will get  created based on the user requirement
+
+Syntax :
+def function_name(args):
+     statement block
+      
+     return values
+
+function_name(args)
+
+
+* def = It is a keyword which is used to define a function
+
+* func_name = It is name given to the function to identify its operation to give function name we should follow identifer reusable
+
+* argumets = it is a keyword, to return some value to function
+
+* return = it is a keyword, to return some value to function
+
+* function call = to execute the function calling the function is very important, a fucntion can be called n number of times
+
+* Based on the argumets and the return values user defined function get classifies
+1. function without argumets and without return values
+2. function with argumets and without return values
+3. function without argumets and with return values
+4. function with argumets and with return values
+
+Variable Space
+1. The scope of a variable in python is depends on the place where the value for the variable is assigned in your source code
+2. Variable assigned inside a function can only be seen by the code within that function, You cannot even refer to such variable from outside the function
+3. Variables assigned inside a function do not clash with variables outside the function, even if the same variable names are used elsewhere. A variable named 'X' assigned outside a given function 
+
+Variable traceback for its value
+                 Error
+                   ^
+                   |
+                inbuilt
+                   ^
+                   |
+                 global
+                   ^
+                   |
+                enclosed
+                   ^
+                   |
+                 local 
+
+Actual and formal Arguments
+Actual Arguments:
+The arguments which are present at function call, or the arguments which are present at sending end are called as actual arguments
+
+Formal arguments:
+These are the arguments which got created while creating the function or those are present at receving end are called as formal arguments
+
+def fname(var1, var2,...varn):
+         statemnet block
+fname(val1,val2,...valn)   #actual agrs
+
+Note - To execute any kind of function the nunbeer of actual arguments should be should be equal to the number of formal arguments.
+
+
+Passing default Values to the parameter or args
+1. As we know the number of actual arguments should be equal to the number of formal arguments
+2. Whenever we have both mandatory and optional arguments then we should use Passing default values.
+3. Where the values for all the mandatory arguments will be Passed and all the non-mandatory arguments will get assigned witj default values.
+
+
+Unpacking 
+Unpacking is a phenomenon of dividing collections into individual values.
+*var1
+
+def fname(var1,var2,...varn):
+         SB
+fname(*var)
+In this case the no. of variables which are creating inside formal arguments section should be equal to the length of thr collection which is passed during the function call
+
+Unpacking collection using multiple variable declaration
+Here we need to follow the rule number variables = length of the collection
+Example
+c1,c2,c3 = "RCB"
+c1
+R
+c2
+B
+c3
+C
